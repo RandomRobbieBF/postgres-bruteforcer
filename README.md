@@ -3,7 +3,9 @@
 About
 ---
 
-This Go script reads a list of usernames and passwords from a file called `creds.txt` and tests them against a PostgreSQL database. The script accepts an IP of the PostgreSQL server as a command line argument or a text file of ip's. 
+This Go script reads a list of usernames and passwords from a file called `creds.txt` and tests them against a PostgreSQL database. 
+
+The script accepts an IP of the PostgreSQL server as a command line argument or a text file of ip's. 
 
 If an access is granted, the script writes this output to a file called `pg-output.txt`.
 
@@ -31,7 +33,7 @@ postgres
 Example Exploits
 ----
 
-Grab `/etc/passwd/
+Grab `/etc/passwd/`
 
 ```
 CREATE TABLE myfile (input TEXT);
