@@ -1,0 +1,11 @@
+postgres:example
+postgres:mysecretpassword
+docker:docker
+docker:postgres
+docker:mysecretpassword
+postgres:myPassword
+postgres:postgres
+postgres:password    
+postgres:admin    
+admin:admin    
+admin:password    
