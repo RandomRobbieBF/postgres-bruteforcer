@@ -1,2 +1,5 @@
 # postgres-bruteforcer
-This tool takes a list of default creds and tests it against a postgresql server and logs any that work and the databases it has access to.
+
+This Go script reads a list of usernames and passwords from a file called `creds.txt` and tests them against a PostgreSQL database. The script accepts an IP of the PostgreSQL server as a command line argument. If an access is granted, the script writes this output to a file called `pg-output.txt`.
+
+
