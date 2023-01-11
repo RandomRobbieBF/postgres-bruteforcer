@@ -78,7 +78,7 @@ func connector(url string) {
 			defer f.Close()
 
 			// Write the string to the file with a new line after it
-			_, err = fmt.Fprintln(f, ""+datname+" - postgres://"+username+":"+password+"@"+url+":5432 \n")
+			_, err = fmt.Fprintln(f, ""+datname+" - postgres://"+username+":"+password+"@"+url+":5432")
 			if err != nil {
 				fmt.Println(err)
 				return
